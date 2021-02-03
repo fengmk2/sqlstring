@@ -53,7 +53,7 @@ test('SqlString.escapeId', {
 
   'raw within array not escaped': function () {
     assert.equal(SqlString.escapeId(['firstColumnName', SqlString.raw('*'), 'secondColumnName']), '`firstColumnName`, *, `secondColumnName`');
-  },
+  }
 });
 
 test('SqlString.escape', {
